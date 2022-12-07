@@ -16,3 +16,5 @@ function login() {
         alert("Invalid Password");
     }
 }
+
+// NOTE that there is a mistake in this code, the last "else if" is unneccesary because we can just say else!
