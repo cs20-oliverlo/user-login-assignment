@@ -9,8 +9,10 @@ function login() {
     let passwordCheck = document.getElementById("password-in").value;
 
     if (usernameCheck === "admin" && passwordCheck === "1234") {
-        alert("Login SUCCESSFUL.");
-    } else {
-        alert("Login UNSUCCESSFUL.");
+        alert("Login Successful");
+    } else if (usernameCheck !== "admin") {
+        alert("Invalid Username");
+    } else if (usernameCheck === "admin" && passwordCheck !== "1234") {
+        alert("Invalid Password");
     }
 }
